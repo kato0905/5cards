@@ -1,0 +1,22 @@
+<script language="JavaScript">
+<!--
+function formcheck() {
+    if(document.form1.roomname.value == "") {
+        alert("Room名を入力してください");
+        return false;
+    }
+    if(document.form1.playername.value == "") {
+        alert("Player名を入力してください");
+        return false;
+    }
+}
+//-->
+</script>
+<h1>5 CARDS</h1>
+<form action="show" onsubmit="return formcheck()" name="form1">
+  Room名
+  <input type="text" name="roomname">
+  Player名
+  <input type="text" name="playername">
+  <input type="submit" value="スタート">
+</form>

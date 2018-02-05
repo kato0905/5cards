@@ -1,0 +1,19 @@
+<input type="hidden" name="roomname" value="<%=params[:roomname]%>" class="roomname">
+<h1>5 CARDS</h1>
+<h2>room   : <%=params[:roomname]%></h2>
+<h2>player : <%=params[:playername]%></h2>
+<div id="messages">
+</div>
+
+<form id="selectcard">
+  <input type="hidden" id="house" name="house" value="<%=params[:roomname]%>">
+  <input type="hidden" id="group" name="group" value="<%=params[:playername]%>">
+  <span id="point"></span>
+  <br>
+  <input type="image" src="/assets/card/1.png" data-behavior="room_speaker" value="1">
+  <input type="image" src="/assets/card/2.png" data-behavior="room_speaker" value="2">
+  <input type="image" src="/assets/card/3.png" data-behavior="room_speaker" value="3">
+  <input type="image" src="/assets/card/4.png" data-behavior="room_speaker" value="4">
+  <input type="image" src="/assets/card/5.png" data-behavior="room_speaker" value="5">
+</form>
+<%= link_to "トップに戻る", :action => "index" %>
